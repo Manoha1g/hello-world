@@ -9,7 +9,7 @@ pipeline{
 		stage('maven Build'){
 			steps{
 			//	buildInfo = goals: 'clean install'
-				sh 'mvn clean install'
+				sh 'mvn install'
 			}
 		}
 	}
