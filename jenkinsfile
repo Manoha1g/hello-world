@@ -2,7 +2,7 @@ pipeline {
 	Agent Any
 	Stages {
 		stage('scm checkout') {
-			git url: https://github.com/Manoha1g/hello-world
+			git url: 'https://github.com/Manoha1g/hello-world'
 		}
 	}	
 }
