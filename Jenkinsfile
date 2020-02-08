@@ -1,8 +1,18 @@
-pipeline {
-	Agent Any
-	Stages {
-		stage('scm checkout') {
-			git url: 'https://github.com/Manoha1g/hello-world'
+pipeline{
+	agent{
+		Any
+	}
+	stages{
+		stage('scm checkout'){
+			steps{
+				git url: 'https://github.com/Manoha1g/hello-world.git'
+			}
 		}
-	}	
+		stage('maven Build'){
+			steps{
+			//	buildInfo = goals: 'clean install'
+				sh 'mvn clean install'
+			}
+		}
+	}
 }
