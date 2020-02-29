@@ -14,5 +14,11 @@ pipeline{
 				sh 'mvn clean install'
 			}
 		}
+		stage('test'){
+			environment {
+				name = "test-stage"
+				author = 'test-author'
+			}
+		}
 	}
 }
