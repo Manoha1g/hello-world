@@ -6,7 +6,7 @@ pipeline{
 	stages{
 		stage('scm checkout'){
 			steps{
-				git url: 'https://github.com/Manoha1g/hello-world.git'
+				git credentialsId: 'github', url: 'https://github.com/Manoha1g/hello-world.git'
 			}
 		}
 		stage('maven build'){
