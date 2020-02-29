@@ -6,10 +6,9 @@ pipeline{
 				git url: 'https://github.com/Manoha1g/hello-world.git'
 			}
 		}
-		stage('maven Build'){
+		stage('maven build'){
 			steps{
-			//	buildInfo = goals: 'clean install'
-				sh 'mvn install'
+				sh 'mvn clean install'
 			}
 		}
 	}
