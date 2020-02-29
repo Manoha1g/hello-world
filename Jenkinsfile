@@ -14,15 +14,15 @@ pipeline{
 				sh 'mvn clean install'
 			}
 		}
-		//stage('test'){
-		//	steps{
-		//		echo "Please find the below worspace path:"
-		//		echo "${workspace}"
+		stage('test'){
+			steps{
+				echo "Please find the below worspace path:"
+				echo "${workspace}"
 			//environment {
 			//	name = 'test-stage-name'
 			//	author = "test-author"
 		//		}
-		//	}
-		//}
+			}
+		}
 	}
 }
