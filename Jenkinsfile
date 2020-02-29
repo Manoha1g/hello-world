@@ -16,9 +16,11 @@ pipeline{
 		}
 		stage('test'){
 			steps{
-			environment {
-				name = 'test-stage-name'
-				author = "test-author"
+				echo "Please find the below worspace path:"
+				echo "${workspace}"
+			//environment {
+			//	name = 'test-stage-name'
+			//	author = "test-author"
 				}
 			}
 		}
