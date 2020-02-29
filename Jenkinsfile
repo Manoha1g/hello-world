@@ -17,11 +17,15 @@ pipeline{
 				sh 'mvn clean install'
 			}
 		}
+	environment {
+		author = "test-author-name"
+	}
 		stage('test'){
 			steps{
 				echo "Please find the below worspace path:"
 				echo "${workspace}"
 				echo "${name}"
+				echo "${author}"
 			//environment {
 			//	name = 'test-stage-name'
 			//	author = "test-author"
