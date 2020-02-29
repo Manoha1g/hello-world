@@ -16,9 +16,9 @@ pipeline{
 		}
 		stage('test'){
 			steps{
-				environment {
-					name = 'test-stage-name'
-					author = "test-author"
+			environment {
+				name = 'test-stage-name'
+				author = "test-author"
 				}
 			}
 		}
