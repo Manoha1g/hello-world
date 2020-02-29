@@ -17,7 +17,6 @@ pipeline{
 				sh 'mvn clean install'
 			}
 		}
-	}
 		stage('test'){
 			steps{
 				echo "Please find the below worspace path:"
