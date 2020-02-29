@@ -3,6 +3,9 @@ pipeline{
     	tools { 
         	maven 'maven-3.6.1' 
 	 }
+	environment {
+		name = "test-env-name"
+	}
 	stages{
 		stage('scm checkout'){
 			steps{
@@ -18,6 +21,7 @@ pipeline{
 			steps{
 				echo "Please find the below worspace path:"
 				echo "${workspace}"
+				echo "${name}"
 			//environment {
 			//	name = 'test-stage-name'
 			//	author = "test-author"
