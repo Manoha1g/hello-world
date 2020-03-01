@@ -30,4 +30,5 @@ pipeline{
 			}
 		}
 	}
+	currentBuild.displayName = "hello-world" + currentBuild.number
 }
