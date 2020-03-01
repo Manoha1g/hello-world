@@ -40,4 +40,7 @@ pipeline{
 		}
 	}
 }
-
+def gitCommitId(){
+	def latestCommitId = sh script: '''git rev-parse --short HEAD''', returnStdio: true
+	echo ${latestCommitId}
+}
