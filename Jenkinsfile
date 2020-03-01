@@ -22,12 +22,12 @@ pipeline{
 				echo "Please find the below worspace path:"
 				echo "${workspace}"
 				echo "${name}"
-				environment {
-					name = 'test-stage-name'
-					author = "test-author"
-					echo "${name}"
-					echo "${author}"
-				}
+			//	environment {
+			//		name = 'test-stage-name'
+			//		author = "test-author"
+			//		echo "${name}"
+			//		echo "${author}"
+			//	}
 			}
 		}
 	}
