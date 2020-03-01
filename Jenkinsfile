@@ -31,6 +31,11 @@ pipeline{
 			//	}
 			}
 		}
+		stage('set Build Number'){
+			steps{
+				currentBuild.displayName = "#--hello-world-"+currentBuild.number
+			}
+		}
 	}
 }
-currentBuild.displayName = "#--hello-world"+currentBuild.number
+
