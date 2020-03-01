@@ -31,5 +31,5 @@ pipeline{
 			}
 		}
 	}
-	currentBuild.displayName = "hello-world" + currentBuild.number
+	currentBuild.displayName = "#--hello-world"+currentBuild.number
 }
