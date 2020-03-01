@@ -1,3 +1,4 @@
+currentBuild.displayName = "#--hello-world"+currentBuild.number
 pipeline{
 	agent any
     	tools { 
@@ -31,5 +32,4 @@ pipeline{
 			}
 		}
 	}
-	currentBuild.displayName = "#--hello-world"+currentBuild.number
 }
