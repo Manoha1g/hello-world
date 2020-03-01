@@ -6,6 +6,7 @@ pipeline{
 	 }
 	environment {
 		name = "test-env-name"
+		commitId = gitCommitId()
 	}
 	stages{
 		stage('scm checkout'){
@@ -36,11 +37,12 @@ pipeline{
 				script{
 					currentBuild.displayName = "#--hello-world-"+currentBuild.number
 				}
+				echo ${commitId}
 			}
 		}
 	}
 }
 def gitCommitId(){
 	def latestCommitId = sh script: '''git rev-parse --short HEAD''', returnStdio: true
-	echo ${latestCommitId}
+	return latestCommitId
 }
