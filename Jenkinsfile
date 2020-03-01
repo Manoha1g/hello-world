@@ -33,7 +33,7 @@ pipeline{
 		}
 		stage('set Build Number'){
 			steps{
-				currentBuild.displayName = "#--hello-world-"+currentBuild.number
+				sh 'urrentBuild.displayName = "#--hello-world-"+currentBuild.number'
 			}
 		}
 	}
