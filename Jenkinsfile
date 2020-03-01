@@ -23,8 +23,9 @@ pipeline{
 				echo "${workspace}"
 				echo "${name}"
 				environment {
-					//name = 'test-stage-name'
+					name = 'test-stage-name'
 					author = "test-author"
+					echo "${name}"
 					echo "${author}"
 				}
 			}
