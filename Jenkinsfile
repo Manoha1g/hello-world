@@ -18,8 +18,8 @@ pipeline{
 					checkout-stage(
 						branch: "master",
 						url: "https://github.com/Manoha1g/hello-world.git"
-					echo "Checkout completed ...."
 					)
+					echo "Checkout completed ...."
 				}
 			}
 		}
