@@ -10,6 +10,7 @@ pipeline{
 //		commitId = gitCommitId()
 	}
 	stages{
+//	Checking out the source code....
 		stage('scm checkout'){
 			steps{
 				script {
@@ -20,6 +21,7 @@ pipeline{
 				}
 			}
 		}
+//	Maven artifact build stage
 		stage('maven build'){
 			steps{
 				sh 'mvn clean install'
