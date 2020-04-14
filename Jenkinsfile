@@ -13,7 +13,7 @@ pipeline{
 			steps{
 //				git credentialsId: 'github', url: 'https://github.com/Manoha1g/hello-world.git'
 				checkout-stage(
-					branch: "master"
+					branch: "master",
 					url: "https://github.com/Manoha1g/hello-world.git"
 				)
 			}
