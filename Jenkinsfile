@@ -1,4 +1,4 @@
-
+@Library('sharedLibraryCi@master')_
 pipeline{
 	agent any
     	tools { 
@@ -11,7 +11,8 @@ pipeline{
 	stages{
 		stage('scm checkout'){
 			steps{
-				git credentialsId: 'github', url: 'https://github.com/Manoha1g/hello-world.git'
+//				git credentialsId: 'github', url: 'https://github.com/Manoha1g/hello-world.git'
+				checkoutStage
 			}
 		}
 		stage('maven build'){
