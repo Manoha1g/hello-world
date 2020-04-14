@@ -37,7 +37,7 @@ pipeline{
 				script{
 					currentBuild.displayName = "#--hello-world-"+currentBuild.number
 				}
-				echo ${commitId}
+//				echo ${commitId}
 			}
 		}
 	}
