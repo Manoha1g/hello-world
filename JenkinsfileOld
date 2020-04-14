@@ -6,7 +6,7 @@ pipeline{
 	 }
 	environment {
 		name = "test-env-name"
-//		commitId = gitCommitId()
+		commitId = gitCommitId()
 	}
 	stages{
 		stage('scm checkout'){
