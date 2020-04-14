@@ -1,4 +1,4 @@
-@Library('shared-library-ci@master') _
+@Library('shared-library-ci@master')_
 
 pipeline{
 	agent any
@@ -12,10 +12,12 @@ pipeline{
 	stages{
 		stage('scm checkout'){
 			steps{
-				checkout-stage(
-					branch: "master",
-					url: "https://github.com/Manoha1g/hello-world.git"
-			)
+				script {
+					checkout-stage(
+						branch: "master",
+						url: "https://github.com/Manoha1g/hello-world.git"
+					)
+				}
 			}
 		}
 		stage('maven build'){
