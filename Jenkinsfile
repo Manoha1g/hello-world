@@ -1,4 +1,4 @@
-@Grab('sharedLibraryCi@master')_
+@Grab('shared-library-ci@master')_
 pipeline{
 	agent any
     	tools { 
