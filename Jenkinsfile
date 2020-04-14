@@ -14,9 +14,11 @@ pipeline{
 		stage('scm checkout'){
 			steps{
 				script {
+					echo "checking out from Git ......"
 					checkout-stage(
 						branch: "master",
 						url: "https://github.com/Manoha1g/hello-world.git"
+					echo "Checkout completed ...."
 					)
 				}
 			}
